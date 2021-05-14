@@ -12,7 +12,7 @@ st.markdown("***")
 choice = st.radio("Select the resource you need:", ("Oxygen resources", "Home-cooked meals", "Medicines", "Available beds"))
 
 if choice == "Available beds":
-    st.write("Please give us some time we are gathering medicine resources for this section")
+    st.write("Please give us some time we are gathering resources for this section")
     
 elif choice == "Oxygen resources":
     sheet_id = "1Oj64QgJYqvY65JYF_2pqnSXRQBlixGN8eyae-6lxjdU"
