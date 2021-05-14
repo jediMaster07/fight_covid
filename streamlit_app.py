@@ -9,10 +9,10 @@ st.markdown("For any updates/corrections/suggestions, please reach out [here](ma
 st.markdown("To volunteer with us connect [here](mailto://fightcovid.resources@gmail.com   )")
 st.markdown("***")
 
-choice = st.radio("Select the resource you need:", ("Oxygen resources", "Home-cooked meals", "Medicines"))
+choice = st.radio("Select the resource you need:", ("Oxygen resources", "Home-cooked meals", "Medicines", "Available beds"))
 
-if choice == "List of available beds":
-    pass
+if choice == "Available beds":
+    st.write("Please give us some time we are gathering medicine resources for this section")
     
 elif choice == "Oxygen resources":
     sheet_id = "1Oj64QgJYqvY65JYF_2pqnSXRQBlixGN8eyae-6lxjdU"
