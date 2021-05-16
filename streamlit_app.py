@@ -43,7 +43,7 @@ with col1:
         
         df = pd.read_csv(url, index_col=False)
         df = df.fillna("")
-        df = df.set_index("Unnamed: 0") 
+        df = df.set_index("Sl. No.") 
         st.table(df)
 
     elif choice == "Remdevisir":
