@@ -57,8 +57,12 @@ def drop_col_from_df(df, state):
     df = df.drop(removeList, axis = 1)
     return df
 
+@st.cache
+def fetch():
+    return pd.read_csv("https://api.covid19india.org/csv/latest/states.csv")
+
 col2.write("Latest West Bengal Trends")
-raw_df = pd.read_csv("https://api.covid19india.org/csv/latest/states.csv")
+raw_df = fetch()
 raw_df = raw_df.loc[raw_df['State'] == 'West Bengal']
 raw_df = raw_df.set_index("Date")
 raw_df.index = pd.to_datetime(raw_df.index)
